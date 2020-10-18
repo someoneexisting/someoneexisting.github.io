@@ -1,6 +1,6 @@
 ---
-title: AY2021 S1
-date: Sunday Aug 30, 2020 20:23:56 +08
+Title: About /r/STS
+date: Sunday Oct 18, 2020 20:45:31 +08
 author: yfyourfriend
 header-includes: |
 	\usepackage{enumitem}
@@ -10,12 +10,6 @@ header-includes: |
 ---
 
 
-
-
-Here is a table of our upcoming talks!
-
-
-
-INSERT IMAGE
+aboutus!
 
 
