@@ -1,12 +1,14 @@
 ---
 Title: Beauty in the Age of Social Media
 date: Sunday Oct 18, 2020 20:48:19 +08
-author: yfyourfriend
+author: Amanda Lee
 header-includes: |
 	\usepackage{enumitem}
 	\setlistdepth{20}
 	\renewlist{itemize}{itemize}{20}
 	\setlist[itemize]{label=$\circ$}
+category: 'diet'
+tags: 'beauty', 'food', 'identity', 'technology'
 ---
 
 ## Social Media and its Influence
@@ -28,9 +30,9 @@ Globally, governments are instituting varied forms of legislation to counter the
 ## Celebrity Endorsement versus Expert Advice 
 With followers and fans amounting to millions, celebrities and celebrity influencers have an unprecedented amount of influence on people. 
 
-<label for="mn-note" class="margin-toggle"> Due to their fame, celebrities are often perceived as reliable “authority”.</label>
-<input type="checkbox" id="mn-note" class="margin-toggle"/>
-<span class="marginnote">
+<label for="sn-note" class="margin-toggle sidenote-number"> Due to their fame, celebrities are often perceived as reliable “authority”.</label>
+<input type="checkbox" id="sn-note" class="margin-toggle"/>
+<span class="sidenote">
 Holmes, S. and Redmond, S. (2012), Framing celebrity: New directions in celebrity culture. Routledge, New York, NY.
 </span> Consequently, celebrity endorsements which contradict expert advice on issues, including food and nutrition, have detrimental effects which are hard to quantify. 
 
@@ -45,10 +47,6 @@ An apt example would be Kim Kardashian’s advertisement for appetite suppressan
 </span>
 
 
-
-
-
-
 Critics argue that Kim was promoting an unhealthy and toxic culture. 
 <label for="mn-note" class="margin-toggle">According to nutrition editor Cynthia Sass, “we need healthier relationships with food and our bodies”. Suppressing one’s appetite is definitely not the right approach to achieving weight loss or health. </label>
 <input type="checkbox" id="mn-note" class="margin-toggle"/>
@@ -56,11 +54,11 @@ Critics argue that Kim was promoting an unhealthy and toxic culture.
 [how can this be allow! lollipop ad controversy](https://www.health.com/food/kim-kardashian-lollipop-ad-controversy)
 </span>
 
-This highlights a tension between celebrities and experts. While many celebrities benefit from an accelerated growth in the beauty and diet industries, <label for="mn-note" class="margin-toggle">
+This highlights a tension between celebrities and experts. While many celebrities benefit from an accelerated growth in the beauty and diet industries, <label for="sn-note" class="margin-toggle sidenote-number">
 many health experts are struggling as fake news and pseudo-facts are becoming indistinguishable from reliable information.
 </label>
-<input type="checkbox" id="mn-note" class="margin-toggle"/>
-<span class="marginnote">
+<input type="checkbox" id="sn-note" class="margin-toggle"/>
+<span class="sidenote">
 de Regt, A., Montecchi, M., & Ferguson, S. L. (2019). A false image of health: how fake news and pseudo-facts spread in the health and beauty industry. Journal of Product & Brand Management.
 </span>
 
@@ -90,22 +88,16 @@ experts have warned that excessive or regular consumption of detox teas could da
 
 ## Unrealistic Notion of Beauty 
 
-<iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=4BlvUnysREo"
-</iframe> 
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4BlvUnysREo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Social media applications have transformed into a platform which promotes an unrealistic and unhealthy notion of beauty. As highlighted previously, celebrities and influencers profit off others’ self-image insecurities. They routinely go against evidence-based discourse on food and nutrition advocated by experts, choosing instead to promote unreliable health and wellness products. 
-
-
 
 <label for="mn-note" class="margin-toggle">
 Research has shown that social media usage results in body image concerns amongst both women and men. 
 </label>
 <input type="checkbox" id="mn-note" class="margin-toggle"/>
 <span class="marginnote">
-your note here
+[http://www2.psy.unsw.edu.au/Users/lvartanian/Publications/Fardouly%20&%20Vartanian%20(2016).pdf](http://www2.psy.unsw.edu.au/Users/lvartanian/Publications/Fardouly%20&%20Vartanian%20%282016%29.pdf])
 </span> This can be corroborated by many experts and is an unsurprising finding. After all, social media exposes users to an ‘ideal’ body type which is often very unrealistic and hard to attain. More often than not, the celebrities and influencers possessing such body types achieve those as a result of routine cosmetic surgeries, expensive diet programmes and even excessive photo editing. In fact, this reasoning forms the basis of Jameela Jamil’s April 2019 criticism of Khloe Kardashian’s Instagram post advertising Flat Tummy shakes. 
 
 <label for="mn-note" class="margin-toggle">
@@ -116,7 +108,6 @@ your note here
 [http://www.justjared.com/photo-gallery/4260235/jameela-jamil-slams-khloe-kardashian-01/
 ](http://www.justjared.com/photo-gallery/4260235/jameela-jamil-slams-khloe-kardashian-01/)
 </span>
-
 
 
 In short, an inclusive culture that promotes a healthy concept of food and nutrition is not commonly found in social media platforms. Despite increased efforts by advocates to counter the negative effects which social media has on individuals’ self-image and body image, the overwhelming narrative is still toxic and unhealthy. 
