@@ -7,7 +7,6 @@ header-includes: |
 	\setlistdepth{20}
 	\renewlist{itemize}{itemize}{20}
 	\setlist[itemize]{label=$\circ$}
-
 category: 'diet'
 tags: 'identity','democracy','science','technology'
 ---

@@ -7,7 +7,7 @@ header-includes: |
 	\setlistdepth{20}
 	\renewlist{itemize}{itemize}{20}
 	\setlist[itemize]{label=$\circ$}
-Category: 'Diet'
+Category: 'diet'
 tags: 'identity, 'mental health', 'lockdown'
 ---
 
