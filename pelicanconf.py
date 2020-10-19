@@ -45,3 +45,8 @@ PLUGIN_PATHS = ["./plugins"]
 
 ADD_SEARCH_BOX = True
 
+
+STATIC_PATHS = [
+    "images",
+]
+
