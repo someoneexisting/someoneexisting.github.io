@@ -11,10 +11,6 @@ category: 'About'
 tags: 'resistance', 'my body is not your scientific canvas', 'feminist'
 ---
 
-My name is Amanda. I am a food scientist and I blog about social issues in my free time. This blog is about my own reconciliation with the concept of food. 
-
-What is food? We might think it is reasonable to assume that in prehistoric times men simply ate, perhaps in startling patterns of irregularity between starvation and feast. 
-
 My name is Amanda. I am an undergraduate majoring in food science with a minor in science, technology and society (“STS”).  I love blogging about social issues in my free time. This blog is about my own reconciliation with the concept of food.
 
 What is food?  We might think it is reasonable to assume that in prehistoric times, men simply ate, perhaps in startling patterns of irregularity between starvation and feast. When did men come to tame the world into the lavish, and then stiffing, prison of 3 meals a day, with <label for="mn-note" class="margin-toggle"> the caloric concept compelling her how much to eat? &raquo;</label> <input type="checkbox" id="mn-note" class="margin-toggle"/> <span class="marginnote"> a typical Singaporean woman would require approximately [1800 kcal a day](https://www.healthhub.sg/programmes/70/7-day-dining-guide). </span> 
