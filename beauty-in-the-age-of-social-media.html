@@ -29,7 +29,7 @@
 <div class="sidebar pure-u-1 pure-u-md-5-24">
     <nav id="sidebar">
       <div class="sidebar-header">
-<div class="sitename"><a href="/">ST9001 /r/sts</a></div>
+<div class="sitename"><a href="/">Amanda's Tea</a></div>
 <div><small></small></div>
 <div>
   <small>
@@ -47,131 +47,12 @@
   </small>
 </div>
 <br>
-<script type="module"> 
-import { search, default as init } from './search_min.js';
-    window.search = search;
-
-async function lazyLoad() {
-    await init('./tinysearch_engine_bg.wasm');
-}
-
-var loaded = false;
-
-function autocomplete(inp) {
-    var currentFocus;
-
-    inp.addEventListener("click", function (e) {
-        // There's probably a better way to do lazy loading.
-        // Then again, I'm not a JavaScript developer ¯\_(ツ)_/¯
-        if (!loaded) {
-            lazyLoad();
-            loaded = true;
-        }
-    });
-
-    inp.addEventListener("input", function (e) {
-        var a, b, i, val = this.value;
-
-        /*close any already open lists of autocompleted values*/
-        closeAllLists();
-        if (!val) {
-            return false;
-        }
-        currentFocus = -1;
-
-        /* Create a DIV element that will contain the items (values):*/
-        a = document.createElement("DIV");
-        a.setAttribute("id", this.id + "autocomplete-list");
-        a.setAttribute("class", "autocomplete-items");
-
-        /* Append the DIV element as a child of the autocomplete container:*/
-        this.parentNode.appendChild(a);
-
-        let arr = search(val, 5);
-
-        for (i = 0; i < arr.length; i++) {
-            let elem = arr[i];
-
-            b = document.createElement("DIV");
-            b.innerHTML = elem[0];
-
-            b.addEventListener("click", function (e) {
-                window.location.href = `${elem[1]}?q=${encodeURIComponent(val)}`;
-            });
-            a.appendChild(b);
-        }
-    });
-
-    inp.addEventListener("keydown", function (e) {
-        var x = document.getElementById(this.id + "autocomplete-list");
-        if (x) x = x.getElementsByTagName("div");
-        if (e.keyCode == 40) {
-            /* If the arrow DOWN key is pressed,
-            increase the currentFocus variable:*/
-            currentFocus++;
-            /* and and make the current item more visible:*/
-            addActive(x);
-        } else if (e.keyCode == 38) { //up
-            /* If the arrow UP key is pressed,
-            decrease the currentFocus variable:*/
-            currentFocus--;
-            /* and and make the current item more visible:*/
-            addActive(x);
-        } else if (e.keyCode == 13) {
-            /* If the ENTER key is pressed, prevent the form from being submitted,*/
-            e.preventDefault();
-            if (currentFocus > -1) {
-                /* and simulate a click on the "active" item:*/
-                if (x) x[currentFocus].click();
-            }
-        }
-    });
-
-    function addActive(x) {
-        /* A function to classify an item as "active":*/
-        if (!x) return false;
-        /* Start by removing the "active" class on all items:*/
-        removeActive(x);
-        if (currentFocus >= x.length) currentFocus = 0;
-        if (currentFocus < 0) currentFocus = (x.length - 1);
-        /* Add class "autocomplete-active":*/
-        x[currentFocus].classList.add("autocomplete-active");
-    }
-
-    function removeActive(x) {
-        /* A function to remove the "active" class from all autocomplete items:*/
-        for (var i = 0; i < x.length; i++) {
-            x[i].classList.remove("autocomplete-active");
-        }
-    }
-
-    function closeAllLists(elmnt) {
-        /* Close all autocomplete lists in the document,
-        except the one passed as an argument:*/
-        var x = document.getElementsByClassName("autocomplete-items");
-        for (var i = 0; i < x.length; i++) {
-            if (elmnt != x[i] && elmnt != inp) {
-                x[i].parentNode.removeChild(x[i]);
-            }
-        }
-    }
-    document.addEventListener("click", function (e) {
-        closeAllLists(e.target);
-    });
-}
-autocomplete(document.getElementById("tinysearch"));
-</script>
-
-<form id="searchbox" autocomplete="off">
-    <div class="autocomplete">
-        <input id="tinysearch" type="text" aria-label="Search articles" placeholder="&#x1F50D; Search articles">
-    </div>
-</form>      </div>
+      </div>
       <div class="sidebar-content">
         <div class="toc"><div class="uppercase">Beauty in the Age of Social Media</div>
 <br>
 <div class="col-lg-3 hidden-xs hidden-sm">
-    <div id="toc"><ul><li><a class="toc-href" href="#" title="Beauty in the Age of Social Media">Beauty in the Age of Social Media</a><ul><li><a class="toc-href" href="#social media and its influence" title="Social Media and its Influence">Social Media and its Influence</a></li><li><a class="toc-href" href="#celebrity endorsement versus expert advice" title="Celebrity Endorsement versus Expert Advice">Celebrity Endorsement versus Expert Advice</a></li><li><a class="toc-href" href="#unrealistic notion of beauty" title="Unrealistic Notion of Beauty">Unrealistic Notion of Beauty</a></li></ul></li></ul></div>
+    <div id="toc"><ul><li><a class="toc-href" href="#" title="Beauty in the Age of Social Media">Beauty in the Age of Social Media</a><ul><li><a class="toc-href" href="#social media and its influence" title="Social Media and its Influence">Social Media and its Influence</a></li><li><a class="toc-href" href="#celebrity endorsement versus expert advice" title="Celebrity Endorsement versus Expert Advice">Celebrity Endorsement versus Expert Advice</a></li><li><a class="toc-href" href="#unrealistic notion of beauty" title="Unrealistic Notion of Beauty">Unrealistic Notion of Beauty</a></li><li><a class="toc-href" href="#references_1" title="References">References</a></li></ul></li></ul></div>
 </div>
 </div>
       </div>
@@ -180,7 +61,7 @@ autocomplete(document.getElementById("tinysearch"));
 </div>
 
 <nav class="phone-header">
-<div class="sitename"><a href="/">ST9001 /r/sts</a></div>
+<div class="sitename"><a href="/">Amanda's Tea</a></div>
 <div><small></small></div>
 <div>
   <small>
@@ -198,126 +79,7 @@ autocomplete(document.getElementById("tinysearch"));
   </small>
 </div>
 <br>
-<script type="module"> 
-import { search, default as init } from './search_min.js';
-    window.search = search;
-
-async function lazyLoad() {
-    await init('./tinysearch_engine_bg.wasm');
-}
-
-var loaded = false;
-
-function autocomplete(inp) {
-    var currentFocus;
-
-    inp.addEventListener("click", function (e) {
-        // There's probably a better way to do lazy loading.
-        // Then again, I'm not a JavaScript developer ¯\_(ツ)_/¯
-        if (!loaded) {
-            lazyLoad();
-            loaded = true;
-        }
-    });
-
-    inp.addEventListener("input", function (e) {
-        var a, b, i, val = this.value;
-
-        /*close any already open lists of autocompleted values*/
-        closeAllLists();
-        if (!val) {
-            return false;
-        }
-        currentFocus = -1;
-
-        /* Create a DIV element that will contain the items (values):*/
-        a = document.createElement("DIV");
-        a.setAttribute("id", this.id + "autocomplete-list");
-        a.setAttribute("class", "autocomplete-items");
-
-        /* Append the DIV element as a child of the autocomplete container:*/
-        this.parentNode.appendChild(a);
-
-        let arr = search(val, 5);
-
-        for (i = 0; i < arr.length; i++) {
-            let elem = arr[i];
-
-            b = document.createElement("DIV");
-            b.innerHTML = elem[0];
-
-            b.addEventListener("click", function (e) {
-                window.location.href = `${elem[1]}?q=${encodeURIComponent(val)}`;
-            });
-            a.appendChild(b);
-        }
-    });
-
-    inp.addEventListener("keydown", function (e) {
-        var x = document.getElementById(this.id + "autocomplete-list");
-        if (x) x = x.getElementsByTagName("div");
-        if (e.keyCode == 40) {
-            /* If the arrow DOWN key is pressed,
-            increase the currentFocus variable:*/
-            currentFocus++;
-            /* and and make the current item more visible:*/
-            addActive(x);
-        } else if (e.keyCode == 38) { //up
-            /* If the arrow UP key is pressed,
-            decrease the currentFocus variable:*/
-            currentFocus--;
-            /* and and make the current item more visible:*/
-            addActive(x);
-        } else if (e.keyCode == 13) {
-            /* If the ENTER key is pressed, prevent the form from being submitted,*/
-            e.preventDefault();
-            if (currentFocus > -1) {
-                /* and simulate a click on the "active" item:*/
-                if (x) x[currentFocus].click();
-            }
-        }
-    });
-
-    function addActive(x) {
-        /* A function to classify an item as "active":*/
-        if (!x) return false;
-        /* Start by removing the "active" class on all items:*/
-        removeActive(x);
-        if (currentFocus >= x.length) currentFocus = 0;
-        if (currentFocus < 0) currentFocus = (x.length - 1);
-        /* Add class "autocomplete-active":*/
-        x[currentFocus].classList.add("autocomplete-active");
-    }
-
-    function removeActive(x) {
-        /* A function to remove the "active" class from all autocomplete items:*/
-        for (var i = 0; i < x.length; i++) {
-            x[i].classList.remove("autocomplete-active");
-        }
-    }
-
-    function closeAllLists(elmnt) {
-        /* Close all autocomplete lists in the document,
-        except the one passed as an argument:*/
-        var x = document.getElementsByClassName("autocomplete-items");
-        for (var i = 0; i < x.length; i++) {
-            if (elmnt != x[i] && elmnt != inp) {
-                x[i].parentNode.removeChild(x[i]);
-            }
-        }
-    }
-    document.addEventListener("click", function (e) {
-        closeAllLists(e.target);
-    });
-}
-autocomplete(document.getElementById("tinysearch"));
-</script>
-
-<form id="searchbox" autocomplete="off">
-    <div class="autocomplete">
-        <input id="tinysearch" type="text" aria-label="Search articles" placeholder="&#x1F50D; Search articles">
-    </div>
-</form></nav>
+</nav>
 
        <div class="content pure-u-1 pure-u-md-4-5">
            <article>
@@ -326,8 +88,8 @@ autocomplete(document.getElementById("tinysearch"));
       <hr>
       <div class="article-information">
         <div class="article-information-heading uppercase">Published</div>
-        <time class="published" datetime="2020-10-18T20:48:19+08:00">
-          Sun 18 October 2020
+        <time class="published" datetime="2022-03-18T20:48:19+08:00">
+          Fri 18 March 2022
         </time>
         <div class="article-information-heading uppercase">Category</div>
         <div>
@@ -352,83 +114,64 @@ autocomplete(document.getElementById("tinysearch"));
     </a></header>
     <div class="article-content">
       <h2 id="social media and its influence">Social Media and its Influence</h2>
+<p>As we are now living in the age of social media, the effect of social media usage on our perception of health and beauty is immense. As of January 2020, approximately 3.6 billion people use social media applications globally. [1] The number of users is projected to grow even further in the coming years! As you can see from the graph below, the most popular social networks garner millions and even billions of users. [2] Isn&rsquo;t that impressive?</p>
 <p><label class="margin-toggle sidenote-number" for="sn-note">
-According to Statista, approximately 3.6 billion people globally use social media applications as of January 2020. This is an increase from 3.4 billion people last year, and the number of users is projected to grow even further in the coming years.</label>
-<input class="margin-toggle" id="sn-note" type="checkbox"/>
+<img height="200" src="./images/top15_socmedia.png" width="200"/></label></p>
+<p><input class="margin-toggle" id="sn-note" type="checkbox"/>
 <span class="sidenote">
-<a href="https://www.statista.com/statistics/278414/number-of-worldwide-social-network-users/">Number of worldwide social network users</a>
+Source: <a href="https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/">Global social networks ranked by number of users</a>
 </span></p>
-<p>After all, digital technologies are expected to become more available and accessible in less developed countries over time. By extension, the number of social media users will also increase. There are many social media applications including, but not limited to, Facebook, Instagram, Twitter and Snapchat. </p>
-<p>FIX CHART
-https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/</p>
-<p>Globally, governments are instituting varied forms of legislation to counter the potential issues which accompany the proliferation of social media. This is unsurprising given that social media has the power to influence societal norms and behaviours. It could even be argued that social media facilitates co-production. Due to the large reach and influence of social media, it is able to alter and shape identities, institutions, discourses and representations. Therefore, the impact which social media has on society&rsquo;s conception of food and nutrition is worth analysing. </p>
+<p>With social media&rsquo;s extensive reach and influence, it is easy to see why social media has become a platform for negotiating between scientific and societal notions of beauty. Individuals are able to easily leverage on social media to alter and shape identities, discourses and representations. Is there a perfect body type? Would it sensible to achieve this ideal and is it made possible by science? The impact of social media on society&rsquo;s conception of food and nutrition is worth analysing. </p>
 <h2 id="celebrity endorsement versus expert advice">Celebrity Endorsement versus Expert Advice</h2>
-<p>With followers and fans amounting to millions, celebrities and celebrity influencers have an unprecedented amount of influence on people. </p>
-<p><label class="margin-toggle sidenote-number" for="sn-note"> Due to their fame, celebrities are often perceived as reliable &ldquo;authority&rdquo;.</label>
-<input class="margin-toggle" id="sn-note" type="checkbox"/>
-<span class="sidenote">
-Holmes, S. and Redmond, S. (2012), Framing celebrity: New directions in celebrity culture. Routledge, New York, NY.
-</span> Consequently, celebrity endorsements which contradict expert advice on issues, including food and nutrition, have detrimental effects which are hard to quantify. </p>
-<p>An apt example would be Kim Kardashian&rsquo;s advertisement for appetite suppressant lollipops in May 2018. The Instagram post, as shown below, garnered much backlash before eventually being deleted.</p>
+<p>With followers and fans amounting to millions on social media applications, celebrities and influencers have an unprecedented amount of influence on people. Moreover, celebrities are often perceived as reliable &ldquo;authority&rdquo;. [3] Consequently, celebrity endorsements which contradict expert advice on important matters - including food and nutrition - have detrimental effects which are hard to quantify. </p>
+<p>An apt example would be Kim Kardashian&rsquo;s advertisement for appetite suppressant lollipops in May 2018. The Instagram post, as shown below, garnered much backlash before eventually being deleted. [4].</p>
 <p><label class="margin-toggle" for="mn-note">
 <img height="200" src="./images/KimKard_1.png" width="200"/>
 </label>
 <input class="margin-toggle" id="mn-note" type="checkbox"/>
 <span class="marginnote">
-<a href="https://www.insider.com/kim-karadshian-appetite-suppressant-lollipop-instagram-apology-2018-5">https://www.insider.com/kim-karadshian-appetite-suppressant-lollipop-instagram-apology-2018-5</a>
+Source: <a href="https://www.insider.com/kim-karadshian-appetite-suppressant-lollipop-instagram-apology-2018-5">https://www.insider.com/kim-karadshian-appetite-suppressant-lollipop-instagram-apology-2018-5</a>
 </span></p>
-<p>Critics argue that Kim was promoting an unhealthy and toxic culture. 
-<label class="margin-toggle" for="mn-note">According to nutrition editor Cynthia Sass, &ldquo;we need healthier relationships with food and our bodies&rdquo;. Suppressing one&rsquo;s appetite is definitely not the right approach to achieving weight loss or health. </label>
-<input class="margin-toggle" id="mn-note" type="checkbox"/>
-<span class="marginnote">
-<a href="https://www.health.com/food/kim-kardashian-lollipop-ad-controversy">how can this be allow! lollipop ad controversy</a>
-</span></p>
-<p>This highlights a tension between celebrities and experts. While many celebrities benefit from an accelerated growth in the beauty and diet industries, <label class="margin-toggle sidenote-number" for="sn-note">
-many health experts are struggling as fake news and pseudo-facts are becoming indistinguishable from reliable information.
-</label>
-<input class="margin-toggle" id="sn-note" type="checkbox"/>
-<span class="sidenote">
-de Regt, A., Montecchi, M., &amp; Ferguson, S. L. (2019). A false image of health: how fake news and pseudo-facts spread in the health and beauty industry. Journal of Product &amp; Brand Management.
-</span></p>
-<p>Kim Kardiashian is not the only celebrity guilty of endorsing scientifically questionable products. Teami, a detox tea company that sells various products which allegedly contain health benefits, have been promoted by well-known celebrities including Kylie Jenner, Cardi B and Demi Lovato. Despite having large followings on social media, these celebrities clearly prioritize their personal commercial interests over tangible health implications. In March 2020, Teami was made to pay \$15 million by the US Federal Trade Commission for <label class="margin-toggle" for="mn-note">&ldquo;making unsubstantiated claims about their products and promoted those claims using paid influencers&rdquo;.
+<p>Health experts and nutritionists critiqued Kardashian for promoting an unhealthy and toxic culture. According to nutrition editor Cynthia Sass, &ldquo;we need healthier relationships with food and our bodies&rdquo;. [5] Suppressing one&rsquo;s appetite is definitely not the right approach to achieving weight loss or health. This highlights a tension between celebrities and experts. While many celebrities benefit from an unprecedented growth in the beauty and diet industries, many health experts are struggling to keep up as fake news is becoming indistinguishable from reliable information. [6] As a budding food scientist myself, I concur with critiques on this matter. </p>
+<p>Kardashian is not the only celebrity guilty of endorsing scientifically questionable products. <label class="margin-toggle" for="mn-note">Teami, a detox company, have been promoted by well-known celebrities including Kylie Jenner, Cardi B and Demi Lovato. [7]
 </label>
 <input class="margin-toggle" id="mn-note" type="checkbox"/>
 <span class="marginnote">
-<a href="https://www.pedestrian.tv/entertainment/kylie-jenner-jameela-jamil-judgement/">https://www.pedestrian.tv/entertainment/kylie-jenner-jameela-jamil-judgement/</a>
-</span>
-Moreover, <label class="margin-toggle" for="mn-note">
-experts have warned that excessive or regular consumption of detox teas could damage one&rsquo;s gut lining, or cause nutrient depletion. 
-</label>
-<input class="margin-toggle" id="mn-note" type="checkbox"/>
-<span class="marginnote">
-<a href="https://www.independent.co.uk/life-style/women/skinny-tea-detox-cleansing-instagram-kylie-jenner-laxative-a9080961.html">https://www.independent.co.uk/life-style/women/skinny-tea-detox-cleansing-instagram-kylie-jenner-laxative-a9080961.html</a>
-</span> There is clearly a conflict between celebrity endorsements and expert advice. Unfortunately, social media has contributed to the conflict by catapulting celebrities to an unrivalled status, in terms of fame and influence. </p>
+Teami made a post regarding Kylie Jenner and Cardi B&rsquo;s endorsements which can be found on the following link: <a href="https://www.teamiblends.com/blogs/lifestyle/kylie-jenner-and-cardi-b-endorse-teami">https://www.teamiblends.com/blogs/lifestyle/kylie-jenner-and-cardi-b-endorse-teami</a></span></p>
 <p><label class="margin-toggle" for="mn-note">
 <img height="200" src="./images/ig_kylie.png" width="200"/>
 </label>
 <input class="margin-toggle" id="mn-note" type="checkbox"/>
 <span class="marginnote">
-<a href="https://www.independent.co.uk/life-style/women/skinny-tea-detox-cleansing-instagram-kylie-jenner-laxative-a9080961.html">https://www.independent.co.uk/life-style/women/skinny-tea-detox-cleansing-instagram-kylie-jenner-laxative-a9080961.html</a>
+Source:<a href="https://www.independent.co.uk/life-style/women/skinny-tea-detox-cleansing-instagram-kylie-jenner-laxative-a9080961.html">https://www.independent.co.uk/life-style/women/skinny-tea-detox-cleansing-instagram-kylie-jenner-laxative-a9080961.html</a>
 </span></p>
+<p>These celebrities are willing to advertise shady products for the sake of commercial interests. Experts have long warned against detox teas as it could damage one&rsquo;s gut lining or cause nutrient depletion. [8] This turned out to have legal ramifications. In March 2020, Teami was charged \$15 million by the US Federal Trade Commission for &ldquo;making unsubstantiated claims about their products and promoted those claims using paid influencers&rdquo;. [9] Once again, we see a conflict between celebrity endorsements and expert advice. Yet, the sheer influence of celebrities means that a potentially large number of individuals could be following toxic and unhealthy methods in hopes of becoming more like these celebrities. </p>
 <h2 id="unrealistic notion of beauty">Unrealistic Notion of Beauty</h2>
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/4BlvUnysREo" width="560"></iframe>
-<p>Social media applications have transformed into a platform which promotes an unrealistic and unhealthy notion of beauty. As highlighted previously, celebrities and influencers profit off others&rsquo; self-image insecurities. They routinely go against evidence-based discourse on food and nutrition advocated by experts, choosing instead to promote unreliable health and wellness products. </p>
-<p><label class="margin-toggle" for="mn-note">
-Research has shown that social media usage results in body image concerns amongst both women and men. 
-</label>
-<input class="margin-toggle" id="mn-note" type="checkbox"/>
-<span class="marginnote">
-<a href="http://www2.psy.unsw.edu.au/Users/lvartanian/Publications/Fardouly%20&amp;%20Vartanian%20%282016%29.pdf]">http://www2.psy.unsw.edu.au/Users/lvartanian/Publications/Fardouly%20&amp;%20Vartanian%20(2016).pdf</a>
-</span> This can be corroborated by many experts and is an unsurprising finding. After all, social media exposes users to an &lsquo;ideal&rsquo; body type which is often very unrealistic and hard to attain. More often than not, the celebrities and influencers possessing such body types achieve those as a result of routine cosmetic surgeries, expensive diet programmes and even excessive photo editing. In fact, this reasoning forms the basis of Jameela Jamil&rsquo;s April 2019 criticism of Khloe Kardashian&rsquo;s Instagram post advertising Flat Tummy shakes. </p>
+<p>Research has shown that social media usage results in body image concerns amongst both women and men. [11] This is expected as social media platforms expose users to an &lsquo;ideal&rsquo; body type which is often unrealistic and impossible to attain. Even celebrities and influencers resort to routine cosmetic surgeries, excessive diet programmes, strict gym routines and excessive photo editing to achieve the &lsquo;desirable&rsquo; body. This argument forms the basis of Jameela Jamil&rsquo;s criticism of Khloe Kardashian&rsquo;s Instagram post advertising Flat Tummy shakes. [12]</p>
 <p><label class="margin-toggle" for="mn-note">
 <img height="200" src="./images/ig_jamee.png" width="200"/>
 </label>
 <input class="margin-toggle" id="mn-note" type="checkbox"/>
 <span class="marginnote">
-<a href="http://www.justjared.com/photo-gallery/4260235/jameela-jamil-slams-khloe-kardashian-01/">http://www.justjared.com/photo-gallery/4260235/jameela-jamil-slams-khloe-kardashian-01/
+Source: <a href="http://www.justjared.com/photo-gallery/4260235/jameela-jamil-slams-khloe-kardashian-01/">http://www.justjared.com/photo-gallery/4260235/jameela-jamil-slams-khloe-kardashian-01/
 </a>
 </span></p>
 <p>In short, an inclusive culture that promotes a healthy concept of food and nutrition is not commonly found in social media platforms. Despite increased efforts by advocates to counter the negative effects which social media has on individuals&rsquo; self-image and body image, the overwhelming narrative is still toxic and unhealthy. </p>
+<p>In short, social media platforms have grown to be a site of contestation between well-informed (and often well-intentioned) health experts and corporate-funded celebrities on what constitutes &lsquo;health&rsquo; and &lsquo;beauty&rsquo;. There has also been increased efforts to counter the negative effects which social media usage has on individuals&rsquo; self-image and body image. Yet, the overwhelming narrative remains toxic and detrimental in the long-run. Worst, it seems impossible to tease the scientific from the social, and it is best for us to continue critically examining the &lsquo;beautiful&rsquo; that bridges the two worlds. </p>
+<h1 id="references_1">References</h1>
+<p>[1] Statista. (2020, July 15). Number of social network users worldwide from 2017 to 2025. Statista. https://www.statista.com/statistics/278414/number-of-worldwide-social-network-users/
+[2] Statista. (2020, July 16). Most popular social networks worldwide as of July 2020, ranked by number of active users. Statista. https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/
+[3] Holmes, S., &amp; Redmond, S. (2012). Introduction: understanding celebrity culture: Su Holmes and Sean Redmond. In Framing Celebrity (pp. 13-28). Routledge.
+[4] Heller, S. (2018, May 17). Instagram apologized to Kim Kardashian for 'mistakenly' deleting her posts promoting 'appetite suppressant' lollipops. Insider. https://www.insider.com/kim-karadshian-appetite-suppressant-lollipop-instagram-apology-2018-5 
+[5] Bakkila, B. (2018, May 17). The Important Reason We Can't Ignore Kim Kardashian's Concerning Appetite Suppressant Ad. Health. https://www.health.com/food/kim-kardashian-lollipop-ad-controversy 
+[6] de Regt, A., Montecchi, M., &amp; Ferguson, S. L. (2019). A false image of health: how fake news and pseudo-facts spread in the health and beauty industry. Journal of Product &amp; Brand Management.
+[7] Korin Miller. (2017, April 28). People Are Not Happy That Demi Lovato Promoted a &lsquo;Detox&rsquo; Tea. Yahoo! News. https://sg.news.yahoo.com/people-pissed-demi-lovato-promoted-weight-loss-tea-165531102.html
+[8] Alexander, M. (2019, September 6). The big fat problem with skinny tea: Detox culture and the brands who sell it. Independent. https://www.independent.co.uk/life-style/women/skinny-tea-detox-cleansing-instagram-kylie-jenner-laxative-a9080961.html 
+[9] Duncan, A. (2020, March 15). Jameela Jamil Celebrates As Kylie Jenner-Endorsed Diet Tea Brand Hit With \$15M Judgement. Pedestrian TV. https://www.pedestrian.tv/entertainment/kylie-jenner-jameela-jamil-judgement/
+[10] SAYS. (2018, September 28). Unrealistic Beauty Standards &amp; Underrepresentation In Media Has To Stop | Nandini Says [Video]. YouTube. https://www.youtube.com/watch?v=4BlvUnysREo&amp;ab_channel=SAYS 
+[11] Fardouly, J., &amp; Vartanian, L. R. (2016). Social media and body image concerns: Current research and future directions. Current opinion in psychology, 9, 1-5.
+[12] Just Jared. (2019, March 21). The Good Place's Jameela Jamil Slams Khloe Kardashian in Her Instagram Comments. Just Jared. http://www.justjared.com/2019/03/21/the-good-places-jameela-jamil-slams-khloe-kardashian-in-her-instagram-comments/ </p>
     </div>
     <hr>
     <div class="condensed-font">
