@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'ST9001 /r/sts'
-SITENAME = 'ST9001 /r/sts'
-SITEURL = ''
+AUTHOR = 'Amanda'
+SITENAME = "Amanda's Tea"
+SITEURL = 'someoneexisting.github.io'
 PATH = 'content'
 
 TIMEZONE = 'Asia/Singapore'
@@ -33,7 +33,7 @@ DEFAULT_PAGINATION = False
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-
+ARTICLE_ORDER_BY = 'date'
 THEME = "./astrochelys"
 TAG_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
@@ -43,7 +43,7 @@ DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives'))
 
 PLUGIN_PATHS = ["./plugins"]
 
-ADD_SEARCH_BOX = True
+# ADD_SEARCH_BOX = True
 
 
 STATIC_PATHS = [

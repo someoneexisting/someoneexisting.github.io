@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ST9001 /r/sts</title>
+    <title>Amanda's Tea</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
@@ -28,7 +28,7 @@
 <div class="sidebar pure-u-1 pure-u-md-5-24">
     <nav id="sidebar">
       <div class="sidebar-header">
-<div class="sitename"><a href="/">ST9001 /r/sts</a></div>
+<div class="sitename"><a href="/">Amanda's Tea</a></div>
 <div><small></small></div>
 <div>
   <small>
@@ -46,145 +46,26 @@
   </small>
 </div>
 <br>
-<script type="module"> 
-import { search, default as init } from './search_min.js';
-    window.search = search;
-
-async function lazyLoad() {
-    await init('./tinysearch_engine_bg.wasm');
-}
-
-var loaded = false;
-
-function autocomplete(inp) {
-    var currentFocus;
-
-    inp.addEventListener("click", function (e) {
-        // There's probably a better way to do lazy loading.
-        // Then again, I'm not a JavaScript developer ¯\_(ツ)_/¯
-        if (!loaded) {
-            lazyLoad();
-            loaded = true;
-        }
-    });
-
-    inp.addEventListener("input", function (e) {
-        var a, b, i, val = this.value;
-
-        /*close any already open lists of autocompleted values*/
-        closeAllLists();
-        if (!val) {
-            return false;
-        }
-        currentFocus = -1;
-
-        /* Create a DIV element that will contain the items (values):*/
-        a = document.createElement("DIV");
-        a.setAttribute("id", this.id + "autocomplete-list");
-        a.setAttribute("class", "autocomplete-items");
-
-        /* Append the DIV element as a child of the autocomplete container:*/
-        this.parentNode.appendChild(a);
-
-        let arr = search(val, 5);
-
-        for (i = 0; i < arr.length; i++) {
-            let elem = arr[i];
-
-            b = document.createElement("DIV");
-            b.innerHTML = elem[0];
-
-            b.addEventListener("click", function (e) {
-                window.location.href = `${elem[1]}?q=${encodeURIComponent(val)}`;
-            });
-            a.appendChild(b);
-        }
-    });
-
-    inp.addEventListener("keydown", function (e) {
-        var x = document.getElementById(this.id + "autocomplete-list");
-        if (x) x = x.getElementsByTagName("div");
-        if (e.keyCode == 40) {
-            /* If the arrow DOWN key is pressed,
-            increase the currentFocus variable:*/
-            currentFocus++;
-            /* and and make the current item more visible:*/
-            addActive(x);
-        } else if (e.keyCode == 38) { //up
-            /* If the arrow UP key is pressed,
-            decrease the currentFocus variable:*/
-            currentFocus--;
-            /* and and make the current item more visible:*/
-            addActive(x);
-        } else if (e.keyCode == 13) {
-            /* If the ENTER key is pressed, prevent the form from being submitted,*/
-            e.preventDefault();
-            if (currentFocus > -1) {
-                /* and simulate a click on the "active" item:*/
-                if (x) x[currentFocus].click();
-            }
-        }
-    });
-
-    function addActive(x) {
-        /* A function to classify an item as "active":*/
-        if (!x) return false;
-        /* Start by removing the "active" class on all items:*/
-        removeActive(x);
-        if (currentFocus >= x.length) currentFocus = 0;
-        if (currentFocus < 0) currentFocus = (x.length - 1);
-        /* Add class "autocomplete-active":*/
-        x[currentFocus].classList.add("autocomplete-active");
-    }
-
-    function removeActive(x) {
-        /* A function to remove the "active" class from all autocomplete items:*/
-        for (var i = 0; i < x.length; i++) {
-            x[i].classList.remove("autocomplete-active");
-        }
-    }
-
-    function closeAllLists(elmnt) {
-        /* Close all autocomplete lists in the document,
-        except the one passed as an argument:*/
-        var x = document.getElementsByClassName("autocomplete-items");
-        for (var i = 0; i < x.length; i++) {
-            if (elmnt != x[i] && elmnt != inp) {
-                x[i].parentNode.removeChild(x[i]);
-            }
-        }
-    }
-    document.addEventListener("click", function (e) {
-        closeAllLists(e.target);
-    });
-}
-autocomplete(document.getElementById("tinysearch"));
-</script>
-
-<form id="searchbox" autocomplete="off">
-    <div class="autocomplete">
-        <input id="tinysearch" type="text" aria-label="Search articles" placeholder="&#x1F50D; Search articles">
-    </div>
-</form>      </div>
+      </div>
       <div class="sidebar-content">
         <div class="toc"><div class="uppercase">Recent Posts</div>
 <br>
 <div>
   <ul>
       <li>
-        <a href="./relationship-between-food-nutrition-and-mental-health.html" rel="bookmark" title="Permalink to Relationship between food nutrition and mental health">Relationship between food nutrition and mental health</a>
+        <a href="./about-amandas-tea.html" rel="bookmark" title="Permalink to About Amanda's Tea">About <i>Amanda's Tea</i></a>
       </li>
       <li>
-        <a href="./citizen-science-on-their-own-diets-a-look-at-vegetarianism.html" rel="bookmark" title="Permalink to Citizen Science on their own diets; a look at vegetarianism">Citizen Science on their own diets; a look at vegetarianism</a>
+        <a href="./main-page.html" rel="bookmark" title="Permalink to Main Page">Main Page</a>
       </li>
       <li>
         <a href="./the-calorie-concept-and-the-health-pyramid.html" rel="bookmark" title="Permalink to The Calorie Concept and the Health Pyramid">The Calorie Concept and the Health Pyramid</a>
       </li>
       <li>
-        <a href="./beauty-in-the-age-of-social-media.html" rel="bookmark" title="Permalink to Beauty in the Age of Social Media">Beauty in the Age of Social Media</a>
+        <a href="./citizen-science-and-veganism.html" rel="bookmark" title="Permalink to Citizen Science and Veganism">Citizen Science and Veganism</a>
       </li>
       <li>
-        <a href="./about-rsts.html" rel="bookmark" title="Permalink to About /r/STS">About /r/STS</a>
+        <a href="./beauty-in-the-age-of-social-media.html" rel="bookmark" title="Permalink to Beauty in the Age of Social Media">Beauty in the Age of Social Media</a>
       </li>
 </ul>
 </div>
@@ -195,7 +76,7 @@ autocomplete(document.getElementById("tinysearch"));
 </div>
 
 <nav class="phone-header">
-<div class="sitename"><a href="/">ST9001 /r/sts</a></div>
+<div class="sitename"><a href="/">Amanda's Tea</a></div>
 <div><small></small></div>
 <div>
   <small>
@@ -213,126 +94,7 @@ autocomplete(document.getElementById("tinysearch"));
   </small>
 </div>
 <br>
-<script type="module"> 
-import { search, default as init } from './search_min.js';
-    window.search = search;
-
-async function lazyLoad() {
-    await init('./tinysearch_engine_bg.wasm');
-}
-
-var loaded = false;
-
-function autocomplete(inp) {
-    var currentFocus;
-
-    inp.addEventListener("click", function (e) {
-        // There's probably a better way to do lazy loading.
-        // Then again, I'm not a JavaScript developer ¯\_(ツ)_/¯
-        if (!loaded) {
-            lazyLoad();
-            loaded = true;
-        }
-    });
-
-    inp.addEventListener("input", function (e) {
-        var a, b, i, val = this.value;
-
-        /*close any already open lists of autocompleted values*/
-        closeAllLists();
-        if (!val) {
-            return false;
-        }
-        currentFocus = -1;
-
-        /* Create a DIV element that will contain the items (values):*/
-        a = document.createElement("DIV");
-        a.setAttribute("id", this.id + "autocomplete-list");
-        a.setAttribute("class", "autocomplete-items");
-
-        /* Append the DIV element as a child of the autocomplete container:*/
-        this.parentNode.appendChild(a);
-
-        let arr = search(val, 5);
-
-        for (i = 0; i < arr.length; i++) {
-            let elem = arr[i];
-
-            b = document.createElement("DIV");
-            b.innerHTML = elem[0];
-
-            b.addEventListener("click", function (e) {
-                window.location.href = `${elem[1]}?q=${encodeURIComponent(val)}`;
-            });
-            a.appendChild(b);
-        }
-    });
-
-    inp.addEventListener("keydown", function (e) {
-        var x = document.getElementById(this.id + "autocomplete-list");
-        if (x) x = x.getElementsByTagName("div");
-        if (e.keyCode == 40) {
-            /* If the arrow DOWN key is pressed,
-            increase the currentFocus variable:*/
-            currentFocus++;
-            /* and and make the current item more visible:*/
-            addActive(x);
-        } else if (e.keyCode == 38) { //up
-            /* If the arrow UP key is pressed,
-            decrease the currentFocus variable:*/
-            currentFocus--;
-            /* and and make the current item more visible:*/
-            addActive(x);
-        } else if (e.keyCode == 13) {
-            /* If the ENTER key is pressed, prevent the form from being submitted,*/
-            e.preventDefault();
-            if (currentFocus > -1) {
-                /* and simulate a click on the "active" item:*/
-                if (x) x[currentFocus].click();
-            }
-        }
-    });
-
-    function addActive(x) {
-        /* A function to classify an item as "active":*/
-        if (!x) return false;
-        /* Start by removing the "active" class on all items:*/
-        removeActive(x);
-        if (currentFocus >= x.length) currentFocus = 0;
-        if (currentFocus < 0) currentFocus = (x.length - 1);
-        /* Add class "autocomplete-active":*/
-        x[currentFocus].classList.add("autocomplete-active");
-    }
-
-    function removeActive(x) {
-        /* A function to remove the "active" class from all autocomplete items:*/
-        for (var i = 0; i < x.length; i++) {
-            x[i].classList.remove("autocomplete-active");
-        }
-    }
-
-    function closeAllLists(elmnt) {
-        /* Close all autocomplete lists in the document,
-        except the one passed as an argument:*/
-        var x = document.getElementsByClassName("autocomplete-items");
-        for (var i = 0; i < x.length; i++) {
-            if (elmnt != x[i] && elmnt != inp) {
-                x[i].parentNode.removeChild(x[i]);
-            }
-        }
-    }
-    document.addEventListener("click", function (e) {
-        closeAllLists(e.target);
-    });
-}
-autocomplete(document.getElementById("tinysearch"));
-</script>
-
-<form id="searchbox" autocomplete="off">
-    <div class="autocomplete">
-        <input id="tinysearch" type="text" aria-label="Search articles" placeholder="&#x1F50D; Search articles">
-    </div>
-</form></nav>
+</nav>
 
        <div class="content pure-u-1 pure-u-md-4-5">
            <article>
@@ -340,37 +102,34 @@ autocomplete(document.getElementById("tinysearch"));
   <article class="hentry">
     <div class="marginnote">
       <div class="condensed-font">
-        <time class="published" datetime="2020-10-19T18:48:01+08:00">
-          Mon 19 October 2020
+        <time class="published" datetime="2020-10-18T20:45:31+08:00">
+          Sun 18 October 2020
         </time>
       </div>
     </div>
     <div class="article-title">
-      <h2><a href="./relationship-between-food-nutrition-and-mental-health.html" rel="bookmark" title="Permalink to Relationship between food nutrition and mental health">Relationship between food nutrition and mental health</a></h2>
+      <h2><a href="./about-amandas-tea.html" rel="bookmark" title="Permalink to About Amanda's Tea">About <i>Amanda's Tea</i></a></h2>
       <h4>
       </h4>
     </div>
-    <div class="article-content"> <p>In this part of the project, we discuss how nutrition is directly related to the issue of <label class="margin-toggle" for="mn-note"> mental health</label>
-<input class="margin-toggle" id="mn-note" type="checkbox"/>
-<span class="marginnote">
-<img height="200" src="./images/logo_brain.png" width="200"/>
-</span>, and how Jasanoff&rsquo;s idea of co-production, which suggests that knowledge is derived from the interactions of science and society, and that they are intrinsically tied to each other, can be …</p> </div>
+    <div class="article-content"> <p>My name is Amanda. I am a food scientist and I blog about social issues in my free time. This blog is about my own reconciliation with the concept of food. </p>
+<p>What is food? We might think it is reasonable to assume that in prehistoric times men simply ate, perhaps …</p> </div>
   </article>
   <article class="hentry">
     <div class="marginnote">
       <div class="condensed-font">
-        <time class="published" datetime="2020-10-19T18:44:32+08:00">
+        <time class="published" datetime="2020-10-19T18:40:52+08:00">
           Mon 19 October 2020
         </time>
       </div>
     </div>
     <div class="article-title">
-      <h2><a href="./citizen-science-on-their-own-diets-a-look-at-vegetarianism.html" rel="bookmark" title="Permalink to Citizen Science on their own diets; a look at vegetarianism">Citizen Science on their own diets; a look at vegetarianism</a></h2>
+      <h2><a href="./main-page.html" rel="bookmark" title="Permalink to Main Page">Main Page</a></h2>
       <h4>
       </h4>
     </div>
-    <div class="article-content"> <h1 id="what is citizen science?">What is citizen science?</h1>
-<p>Citizen science refers to non-scientists individuals playing a role in developing a new culture. One of the food cultures that were born through citizen science is vegetarianism. Around the globe, the vegetarianism and vegan movement is becoming more popular. Many individuals are starting to lean towards …</p> </div>
+    <div class="article-content"> <p>There is one thing that bugs me every day: what is the distance between societal discourse about food and food science as I learn academically in school? This is an object of analysis that occupies my mind day and night: from the 
+<a href="/the-calorie-concept-and-the-health-pyramid.html">very definition of health through the food pyramid …</a></p> </div>
   </article>
   <article class="hentry">
     <div class="marginnote">
@@ -385,14 +144,28 @@ autocomplete(document.getElementById("tinysearch"));
       <h4>
       </h4>
     </div>
-    <div class="article-content"> <h1 id="the calorie concept">The Calorie Concept</h1>
-<p>*The calorie is a unit of measurement for energy. There are two broad definitions of calorie: small calorie and large calorie. The large calorie is generally associated with food and nutrition, so this will be the calorie referred to henceforth. A calorie is the amount of heat …</p> </div>
+    <div class="article-content">  </div>
   </article>
   <article class="hentry">
     <div class="marginnote">
       <div class="condensed-font">
-        <time class="published" datetime="2020-10-18T20:48:19+08:00">
-          Sun 18 October 2020
+        <time class="published" datetime="2020-10-23T18:44:32+08:00">
+          Fri 23 October 2020
+        </time>
+      </div>
+    </div>
+    <div class="article-title">
+      <h2><a href="./citizen-science-and-veganism.html" rel="bookmark" title="Permalink to Citizen Science and Veganism">Citizen Science and Veganism</a></h2>
+      <h4>
+      </h4>
+    </div>
+    <div class="article-content">  </div>
+  </article>
+  <article class="hentry">
+    <div class="marginnote">
+      <div class="condensed-font">
+        <time class="published" datetime="2022-10-18T20:48:19+08:00">
+          Tue 18 October 2022
         </time>
       </div>
     </div>
@@ -401,29 +174,22 @@ autocomplete(document.getElementById("tinysearch"));
       <h4>
       </h4>
     </div>
-    <div class="article-content"> <h2 id="social media and its influence">Social Media and its Influence</h2>
-<p><label class="margin-toggle sidenote-number" for="sn-note">
-According to Statista, approximately 3.6 billion people globally use social media applications as of January 2020. This is an increase from 3.4 billion people last year, and the number of users is projected to grow even further in the coming years.</label>
-<input class="margin-toggle" id="sn-note" type="checkbox"/>
-<span class="sidenote">
-<a href="https://www.statista.com/statistics/278414/number-of-worldwide-social-network-users/">Number of …</a></span></p> </div>
+    <div class="article-content">  </div>
   </article>
   <article class="hentry">
     <div class="marginnote">
       <div class="condensed-font">
-        <time class="published" datetime="2020-10-18T20:45:31+08:00">
-          Sun 18 October 2020
+        <time class="published" datetime="2023-10-19T18:48:01+08:00">
+          Thu 19 October 2023
         </time>
       </div>
     </div>
     <div class="article-title">
-      <h2><a href="./about-rsts.html" rel="bookmark" title="Permalink to About /r/STS">About /r/STS</a></h2>
+      <h2><a href="./food-nutrition-mental-health.html" rel="bookmark" title="Permalink to Food Nutrition & Mental Health">Food Nutrition & Mental Health</a></h2>
       <h4>
       </h4>
     </div>
-    <div class="article-content"> <hr/>
-<p>My name is Amanda. I am a food scientist and I blog about social issues in my free time. This blog is about my own reconciliation with the concept of food. </p>
-<p>What is food? We might think it is reasonable to assume that in prehistoric times men simply ate, perhaps …</p> </div>
+    <div class="article-content">  </div>
   </article>
 </section>
                <hr>

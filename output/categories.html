@@ -28,7 +28,7 @@
 <div class="sidebar pure-u-1 pure-u-md-5-24">
     <nav id="sidebar">
       <div class="sidebar-header">
-<div class="sitename"><a href="/">ST9001 /r/sts</a></div>
+<div class="sitename"><a href="/">Amanda's Tea</a></div>
 <div><small></small></div>
 <div>
   <small>
@@ -46,126 +46,7 @@
   </small>
 </div>
 <br>
-<script type="module"> 
-import { search, default as init } from './search_min.js';
-    window.search = search;
-
-async function lazyLoad() {
-    await init('./tinysearch_engine_bg.wasm');
-}
-
-var loaded = false;
-
-function autocomplete(inp) {
-    var currentFocus;
-
-    inp.addEventListener("click", function (e) {
-        // There's probably a better way to do lazy loading.
-        // Then again, I'm not a JavaScript developer ¯\_(ツ)_/¯
-        if (!loaded) {
-            lazyLoad();
-            loaded = true;
-        }
-    });
-
-    inp.addEventListener("input", function (e) {
-        var a, b, i, val = this.value;
-
-        /*close any already open lists of autocompleted values*/
-        closeAllLists();
-        if (!val) {
-            return false;
-        }
-        currentFocus = -1;
-
-        /* Create a DIV element that will contain the items (values):*/
-        a = document.createElement("DIV");
-        a.setAttribute("id", this.id + "autocomplete-list");
-        a.setAttribute("class", "autocomplete-items");
-
-        /* Append the DIV element as a child of the autocomplete container:*/
-        this.parentNode.appendChild(a);
-
-        let arr = search(val, 5);
-
-        for (i = 0; i < arr.length; i++) {
-            let elem = arr[i];
-
-            b = document.createElement("DIV");
-            b.innerHTML = elem[0];
-
-            b.addEventListener("click", function (e) {
-                window.location.href = `${elem[1]}?q=${encodeURIComponent(val)}`;
-            });
-            a.appendChild(b);
-        }
-    });
-
-    inp.addEventListener("keydown", function (e) {
-        var x = document.getElementById(this.id + "autocomplete-list");
-        if (x) x = x.getElementsByTagName("div");
-        if (e.keyCode == 40) {
-            /* If the arrow DOWN key is pressed,
-            increase the currentFocus variable:*/
-            currentFocus++;
-            /* and and make the current item more visible:*/
-            addActive(x);
-        } else if (e.keyCode == 38) { //up
-            /* If the arrow UP key is pressed,
-            decrease the currentFocus variable:*/
-            currentFocus--;
-            /* and and make the current item more visible:*/
-            addActive(x);
-        } else if (e.keyCode == 13) {
-            /* If the ENTER key is pressed, prevent the form from being submitted,*/
-            e.preventDefault();
-            if (currentFocus > -1) {
-                /* and simulate a click on the "active" item:*/
-                if (x) x[currentFocus].click();
-            }
-        }
-    });
-
-    function addActive(x) {
-        /* A function to classify an item as "active":*/
-        if (!x) return false;
-        /* Start by removing the "active" class on all items:*/
-        removeActive(x);
-        if (currentFocus >= x.length) currentFocus = 0;
-        if (currentFocus < 0) currentFocus = (x.length - 1);
-        /* Add class "autocomplete-active":*/
-        x[currentFocus].classList.add("autocomplete-active");
-    }
-
-    function removeActive(x) {
-        /* A function to remove the "active" class from all autocomplete items:*/
-        for (var i = 0; i < x.length; i++) {
-            x[i].classList.remove("autocomplete-active");
-        }
-    }
-
-    function closeAllLists(elmnt) {
-        /* Close all autocomplete lists in the document,
-        except the one passed as an argument:*/
-        var x = document.getElementsByClassName("autocomplete-items");
-        for (var i = 0; i < x.length; i++) {
-            if (elmnt != x[i] && elmnt != inp) {
-                x[i].parentNode.removeChild(x[i]);
-            }
-        }
-    }
-    document.addEventListener("click", function (e) {
-        closeAllLists(e.target);
-    });
-}
-autocomplete(document.getElementById("tinysearch"));
-</script>
-
-<form id="searchbox" autocomplete="off">
-    <div class="autocomplete">
-        <input id="tinysearch" type="text" aria-label="Search articles" placeholder="&#x1F50D; Search articles">
-    </div>
-</form>      </div>
+      </div>
       <div class="sidebar-content">
         <div class="toc"><div class="uppercase">Categories</div>
 <br>
@@ -181,7 +62,7 @@ autocomplete(document.getElementById("tinysearch"));
 </div>
 
 <nav class="phone-header">
-<div class="sitename"><a href="/">ST9001 /r/sts</a></div>
+<div class="sitename"><a href="/">Amanda's Tea</a></div>
 <div><small></small></div>
 <div>
   <small>
@@ -199,126 +80,7 @@ autocomplete(document.getElementById("tinysearch"));
   </small>
 </div>
 <br>
-<script type="module"> 
-import { search, default as init } from './search_min.js';
-    window.search = search;
-
-async function lazyLoad() {
-    await init('./tinysearch_engine_bg.wasm');
-}
-
-var loaded = false;
-
-function autocomplete(inp) {
-    var currentFocus;
-
-    inp.addEventListener("click", function (e) {
-        // There's probably a better way to do lazy loading.
-        // Then again, I'm not a JavaScript developer ¯\_(ツ)_/¯
-        if (!loaded) {
-            lazyLoad();
-            loaded = true;
-        }
-    });
-
-    inp.addEventListener("input", function (e) {
-        var a, b, i, val = this.value;
-
-        /*close any already open lists of autocompleted values*/
-        closeAllLists();
-        if (!val) {
-            return false;
-        }
-        currentFocus = -1;
-
-        /* Create a DIV element that will contain the items (values):*/
-        a = document.createElement("DIV");
-        a.setAttribute("id", this.id + "autocomplete-list");
-        a.setAttribute("class", "autocomplete-items");
-
-        /* Append the DIV element as a child of the autocomplete container:*/
-        this.parentNode.appendChild(a);
-
-        let arr = search(val, 5);
-
-        for (i = 0; i < arr.length; i++) {
-            let elem = arr[i];
-
-            b = document.createElement("DIV");
-            b.innerHTML = elem[0];
-
-            b.addEventListener("click", function (e) {
-                window.location.href = `${elem[1]}?q=${encodeURIComponent(val)}`;
-            });
-            a.appendChild(b);
-        }
-    });
-
-    inp.addEventListener("keydown", function (e) {
-        var x = document.getElementById(this.id + "autocomplete-list");
-        if (x) x = x.getElementsByTagName("div");
-        if (e.keyCode == 40) {
-            /* If the arrow DOWN key is pressed,
-            increase the currentFocus variable:*/
-            currentFocus++;
-            /* and and make the current item more visible:*/
-            addActive(x);
-        } else if (e.keyCode == 38) { //up
-            /* If the arrow UP key is pressed,
-            decrease the currentFocus variable:*/
-            currentFocus--;
-            /* and and make the current item more visible:*/
-            addActive(x);
-        } else if (e.keyCode == 13) {
-            /* If the ENTER key is pressed, prevent the form from being submitted,*/
-            e.preventDefault();
-            if (currentFocus > -1) {
-                /* and simulate a click on the "active" item:*/
-                if (x) x[currentFocus].click();
-            }
-        }
-    });
-
-    function addActive(x) {
-        /* A function to classify an item as "active":*/
-        if (!x) return false;
-        /* Start by removing the "active" class on all items:*/
-        removeActive(x);
-        if (currentFocus >= x.length) currentFocus = 0;
-        if (currentFocus < 0) currentFocus = (x.length - 1);
-        /* Add class "autocomplete-active":*/
-        x[currentFocus].classList.add("autocomplete-active");
-    }
-
-    function removeActive(x) {
-        /* A function to remove the "active" class from all autocomplete items:*/
-        for (var i = 0; i < x.length; i++) {
-            x[i].classList.remove("autocomplete-active");
-        }
-    }
-
-    function closeAllLists(elmnt) {
-        /* Close all autocomplete lists in the document,
-        except the one passed as an argument:*/
-        var x = document.getElementsByClassName("autocomplete-items");
-        for (var i = 0; i < x.length; i++) {
-            if (elmnt != x[i] && elmnt != inp) {
-                x[i].parentNode.removeChild(x[i]);
-            }
-        }
-    }
-    document.addEventListener("click", function (e) {
-        closeAllLists(e.target);
-    });
-}
-autocomplete(document.getElementById("tinysearch"));
-</script>
-
-<form id="searchbox" autocomplete="off">
-    <div class="autocomplete">
-        <input id="tinysearch" type="text" aria-label="Search articles" placeholder="&#x1F50D; Search articles">
-    </div>
-</form></nav>
+</nav>
 
        <div class="content pure-u-1 pure-u-md-4-5">
            <article>
@@ -327,7 +89,7 @@ autocomplete(document.getElementById("tinysearch"));
 </header>
 <div>
   <h3>
-    'About' (1)
+    'About' (2)
   </h3>
   <div id="about-ref">
     <div class="marginnote">
@@ -338,7 +100,17 @@ autocomplete(document.getElementById("tinysearch"));
     </div>
     </div>
     <div class="article-title">
-      <a href="./about-rsts.html">About /r/STS<br></a>
+      <a href="./about-amandas-tea.html">About <i>Amanda's Tea</i><br></a>
+    </div>
+    <div class="marginnote">
+    <div class="condensed-font">
+      <time class="published" datetime="2020-10-19T18:40:52+08:00">
+        Mon 19 October 2020
+      </time>
+    </div>
+    </div>
+    <div class="article-title">
+      <a href="./main-page.html">Main Page<br></a>
     </div>
   </div>
 </div>
@@ -366,33 +138,33 @@ autocomplete(document.getElementById("tinysearch"));
   <div id="diet-ref">
     <div class="marginnote">
     <div class="condensed-font">
-      <time class="published" datetime="2020-10-19T18:48:01+08:00">
-        Mon 19 October 2020
+      <time class="published" datetime="2020-10-23T18:44:32+08:00">
+        Fri 23 October 2020
       </time>
     </div>
     </div>
     <div class="article-title">
-      <a href="./relationship-between-food-nutrition-and-mental-health.html">Relationship between food nutrition and mental health<br></a>
+      <a href="./citizen-science-and-veganism.html">Citizen Science and Veganism<br></a>
     </div>
     <div class="marginnote">
     <div class="condensed-font">
-      <time class="published" datetime="2020-10-19T18:44:32+08:00">
-        Mon 19 October 2020
-      </time>
-    </div>
-    </div>
-    <div class="article-title">
-      <a href="./citizen-science-on-their-own-diets-a-look-at-vegetarianism.html">Citizen Science on their own diets; a look at vegetarianism<br></a>
-    </div>
-    <div class="marginnote">
-    <div class="condensed-font">
-      <time class="published" datetime="2020-10-18T20:48:19+08:00">
-        Sun 18 October 2020
+      <time class="published" datetime="2022-10-18T20:48:19+08:00">
+        Tue 18 October 2022
       </time>
     </div>
     </div>
     <div class="article-title">
       <a href="./beauty-in-the-age-of-social-media.html">Beauty in the Age of Social Media<br></a>
+    </div>
+    <div class="marginnote">
+    <div class="condensed-font">
+      <time class="published" datetime="2023-10-19T18:48:01+08:00">
+        Thu 19 October 2023
+      </time>
+    </div>
+    </div>
+    <div class="article-title">
+      <a href="./food-nutrition-mental-health.html">Food Nutrition & Mental Health<br></a>
     </div>
   </div>
 </div>
