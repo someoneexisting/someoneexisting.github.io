@@ -13,12 +13,11 @@ Summary:
 ---
 
 
-On bad days, I lie in bed awake at night and an essay flows out of me. The thoughts of technoscience bleed back into the writings of my final year project on NRF-2 and mental health, and then my deranged thoughts bleed back into this thesis.
-<label for="mn-note" class="margin-toggle"> mental health</label>
+On bad days, I lie in bed awake at night and an essay flows out of me. The thoughts of technoscience bleed back into the writings of my final year project on NRF-2 and mental health, and then my <label for="mn-note" class="margin-toggle"> deranged thoughts</label>
 <input type="checkbox" id="mn-note" class="margin-toggle"/>
 <span class="marginnote">
 <img src="{static}/images/logo_handhead.png" width="200" height="200" />
-</span>
+</span> bleed back into this thesis.
 
 What does it mean to eat anyway? Eating is the main way to provide the required nutrients for one’s nervous system, allowing the body to  <label for="mn-note" class="margin-toggle">
 function optimally. [3]
