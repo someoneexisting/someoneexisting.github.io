@@ -25,7 +25,7 @@ In today’s post, I would like to discuss how around the globe, the vegetariani
 Source: [https://www.statista.com/statistics/1102038/singapore-reasons-for-plant-based-diets/](https://www.statista.com/statistics/1102038/singapore-reasons-for-plant-based-diets/)
 </span>
 
-## Popularity of veganism
+# Popularity of veganism
 In 2009, veganism only had a popularity score of 20 in Google’s worldwide search interest ranking. Over the years, veganism’s popularity greatly increased. In 2019, for instance, the popularity score of veganism rose up to 65 in Google’s worldwide search interest ranking. This increased popularity can be attributed to the increased amount of health issues arising from the high levels of consumption of processed foods and red meat over the years. 
 
 <label for="mn-note" class="margin-toggle">
@@ -82,9 +82,13 @@ The scientific research on the risk of processed/red meat led to a change in foo
 
 Further, we have seen that there is an increased stabilisation and interest in food science for vegetarianism as a better health and economical alternative. The changes in society have led scientists to develop/innovate plant-based meat for the vegans which can be seen from Impossible Foods. From my understanding from the co-production’s lens, these dietary battles by scientific and citizen actors will go on for quite a while!
 
-## Reference
-[1] Is red meat bad for you? Benefits, risks, research, and guidelines: MedicalNewsToday [Online]. Available: https://www.medicalnewstoday.com/articles/326156#heart-disease-and-trimethylamine-n-oxide [Accessed Oct 10, 2020].
-[2] Impact of chronic dietary red meat, white meat, or non-meat protein on trimethylamine N-oxide metabolism and renal excretion in healthy men and women: OXFORD ACADEMIC [Online]. Available: https://academic.oup.com/eurheartj/article/40/7/583/5232723 [Accessed Oct 10, 2020].
-[3] Strasser, B. J., Baudry, J., Mahr, D., Sanchez, G., & Tancoigne, E. (2018). “Citizen Science”? Rethinking Science and Public Participation. Science & Technology Studies, 52–76. https://doi.org/10.23987/sts.60425
-[4] Dolejšová, M., & Kera, D. (2017). Soylent Diet Self-Experimentation: Design Challenges in Extreme Citizen Science Projects. Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing, 2112–2123. https://doi.org/10.1145/2998181.2998365
+# Reference
+[1] Is red meat bad for you? Benefits, risks, research, and guidelines: MedicalNewsToday [Online]. Available: [https://www.medicalnewstoday.com/articles/326156#heart-disease-and-trimethylamine-n-oxide](https://www.medicalnewstoday.com/articles/326156#heart-disease-and-trimethylamine-n-oxide)
+[Accessed Oct 10, 2020].
+
+[2] Impact of chronic dietary red meat, white meat, or non-meat protein on trimethylamine N-oxide metabolism and renal excretion in healthy men and women: OXFORD ACADEMIC [Online]. Available: [https://academic.oup.com/eurheartj/article/40/7/583/5232723 ](https://academic.oup.com/eurheartj/article/40/7/583/5232723)[Accessed Oct 10, 2020].
+
+[3] Strasser, B. J., Baudry, J., Mahr, D., Sanchez, G., & Tancoigne, E. (2018). “Citizen Science”? Rethinking Science and Public Participation. Science & Technology Studies, 52–76.[https://doi.org/10.23987/sts.60425](https://doi.org/10.23987/sts.60425)
+
+[4] Dolejšová, M., & Kera, D. (2017). Soylent Diet Self-Experimentation: Design Challenges in Extreme Citizen Science Projects. Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing, 2112–2123. [https://doi.org/10.1145/2998181.2998365](https://doi.org/10.1145/2998181.2998365)
 

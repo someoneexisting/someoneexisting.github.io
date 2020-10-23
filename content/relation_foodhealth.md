@@ -70,8 +70,11 @@ Their affected mental health was ultimately caused by the subjects’ parents la
 It can thus be concluded that the effects of nutrition, or most importantly the lack of it, have a direct impact on both the physical and mental health of members of society. It is important that the use of science to assess the effects which food has on society, must not be impervious to socioeconomic factors of the eater. Most importantly, it further cements Jasanoff’s idea of co-production, as they display how science and society are intrinsically tied to each other, as the lack of proper nutrition, due to societal reasons such as poverty, may cost negative consequences, some of which may be long lasting.
 
 ## References
-(1) Harper, K., Susser, E., Clair, D., Bendich, A., & Deckelbaum, R. (2010). Linking Prenatal Nutrition to Adult Mental Health. In Preventive Nutrition: The Comprehensive Guide for Health Professionals (pp. 705–720). Humana Press. https://doi.org/10.1007/978-1-60327-542-2_27
-(2) Galil, N., Hedaya, R., Marian, M., & Mullin, G. (2017). Nutrition and Mental Health. In Integrating Nutrition Into Practice (1st ed., pp. 407–418). CRC Press. https://doi.org/10.1201/b22342-18
-(3) Shetreat-Klein, M., Marian, M., & Mullin, G. (2017). Neurology and Nutrition. In Integrating Nutrition Into Practice (1st ed., pp. 419–438). CRC Press. https://doi.org/10.1201/b22342-19
-(4) Why are processed foods cheaper than fresh foods? | Eating and Society. (2020). Retrieved October 18, 2020, from Sharecare website: https://www.sharecare.com/health/eating-and-society/why-processed-foods-cheaper-fresh
+(1) Harper, K., Susser, E., Clair, D., Bendich, A., & Deckelbaum, R. (2010). Linking Prenatal Nutrition to Adult Mental Health. In Preventive Nutrition: The Comprehensive Guide for Health Professionals (pp. 705–720). Humana Press. [https://doi.org/10.1007/978-1-60327-542-2_27](https://doi.org/10.1007/978-1-60327-542-2_27)
+
+(2) Galil, N., Hedaya, R., Marian, M., & Mullin, G. (2017). Nutrition and Mental Health. In Integrating Nutrition Into Practice (1st ed., pp. 407–418). CRC Press. [https://doi.org/10.1201/b22342-18](https://doi.org/10.1201/b22342-18)
+
+(3) Shetreat-Klein, M., Marian, M., & Mullin, G. (2017). Neurology and Nutrition. In Integrating Nutrition Into Practice (1st ed., pp. 419–438). CRC Press.[https://doi.org/10.1201/b22342-19](https://doi.org/10.1201/b22342-19)
+
+(4) Why are processed foods cheaper than fresh foods? | Eating and Society. (2020). Retrieved October 18, 2020, from Sharecare website: [https://www.sharecare.com/health/eating-and-society/why-processed-foods-cheaper-fresh](https://www.sharecare.com/health/eating-and-society/why-processed-foods-cheaper-fresh)
 

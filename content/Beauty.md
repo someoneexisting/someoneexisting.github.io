@@ -81,16 +81,28 @@ In short, an inclusive culture that promotes a healthy concept of food and nutri
 In short, social media platforms have grown to be a site of contestation between well-informed (and often well-intentioned) health experts and corporate-funded celebrities on what constitutes ‘health’ and ‘beauty’. There has also been increased efforts to counter the negative effects which social media usage has on individuals’ self-image and body image. Yet, the overwhelming narrative remains toxic and detrimental in the long-run. Worst, it seems impossible to tease the scientific from the social, and it is best for us to continue critically examining the ‘beautiful’ that bridges the two worlds. 
 
 # References
-[1] Statista. (2020, July 15). Number of social network users worldwide from 2017 to 2025. Statista. https://www.statista.com/statistics/278414/number-of-worldwide-social-network-users/
-[2] Statista. (2020, July 16). Most popular social networks worldwide as of July 2020, ranked by number of active users. Statista. https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/
+[1] Statista. (2020, July 15). Number of social network users worldwide from 2017 to 2025. Statista. [https://www.statista.com/statistics/278414/number-of-worldwide-social-network-users/](https://www.statista.com/statistics/278414/number-of-worldwide-social-network-users/)
+
+[2] Statista. (2020, July 16). Most popular social networks worldwide as of July 2020, ranked by number of active users. Statista. [https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/](https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/)
+
 [3] Holmes, S., & Redmond, S. (2012). Introduction: understanding celebrity culture: Su Holmes and Sean Redmond. In Framing Celebrity (pp. 13-28). Routledge.
-[4] Heller, S. (2018, May 17). Instagram apologized to Kim Kardashian for 'mistakenly' deleting her posts promoting 'appetite suppressant' lollipops. Insider. https://www.insider.com/kim-karadshian-appetite-suppressant-lollipop-instagram-apology-2018-5 
-[5] Bakkila, B. (2018, May 17). The Important Reason We Can't Ignore Kim Kardashian's Concerning Appetite Suppressant Ad. Health. https://www.health.com/food/kim-kardashian-lollipop-ad-controversy 
+
+[4] Heller, S. (2018, May 17). Instagram apologized to Kim Kardashian for 'mistakenly' deleting her posts promoting 'appetite suppressant' lollipops. Insider. [https://www.insider.com/kim-karadshian-appetite-suppressant-lollipop-instagram-apology-2018-5](https://www.insider.com/kim-karadshian-appetite-suppressant-lollipop-instagram-apology-2018-5)
+
+[5] Bakkila, B. (2018, May 17). The Important Reason We Can't Ignore Kim Kardashian's Concerning Appetite Suppressant Ad. Health. [https://www.health.com/food/kim-kardashian-lollipop-ad-controversy](https://www.health.com/food/kim-kardashian-lollipop-ad-controversy )
+
 [6] de Regt, A., Montecchi, M., & Ferguson, S. L. (2019). A false image of health: how fake news and pseudo-facts spread in the health and beauty industry. Journal of Product & Brand Management.
-[7] Korin Miller. (2017, April 28). People Are Not Happy That Demi Lovato Promoted a ‘Detox’ Tea. Yahoo! News. https://sg.news.yahoo.com/people-pissed-demi-lovato-promoted-weight-loss-tea-165531102.html
-[8] Alexander, M. (2019, September 6). The big fat problem with skinny tea: Detox culture and the brands who sell it. Independent. https://www.independent.co.uk/life-style/women/skinny-tea-detox-cleansing-instagram-kylie-jenner-laxative-a9080961.html 
-[9] Duncan, A. (2020, March 15). Jameela Jamil Celebrates As Kylie Jenner-Endorsed Diet Tea Brand Hit With \$15M Judgement. Pedestrian TV. https://www.pedestrian.tv/entertainment/kylie-jenner-jameela-jamil-judgement/
-[10] SAYS. (2018, September 28). Unrealistic Beauty Standards & Underrepresentation In Media Has To Stop | Nandini Says [Video]. YouTube. https://www.youtube.com/watch?v=4BlvUnysREo&ab_channel=SAYS 
+
+[7] Korin Miller. (2017, April 28). People Are Not Happy That Demi Lovato Promoted a ‘Detox’ Tea. Yahoo! News. [https://sg.news.yahoo.com/people-pissed-demi-lovato-promoted-weight-loss-tea-165531102.html](https://sg.news.yahoo.com/people-pissed-demi-lovato-promoted-weight-loss-tea-165531102.html)
+
+[8] Alexander, M. (2019, September 6). The big fat problem with skinny tea: Detox culture and the brands who sell it. Independent. 
+[https://www.independent.co.uk/life-style/women/skinny-tea-detox-cleansing-instagram-kylie-jenner-laxative-a9080961.html](https://www.independent.co.uk/life-style/women/skinny-tea-detox-cleansing-instagram-kylie-jenner-laxative-a9080961.html)
+
+[9] Duncan, A. (2020, March 15). Jameela Jamil Celebrates As Kylie Jenner-Endorsed Diet Tea Brand Hit With \$15M Judgement. Pedestrian TV. [https://www.pedestrian.tv/entertainment/kylie-jenner-jameela-jamil-judgement/](https://www.pedestrian.tv/entertainment/kylie-jenner-jameela-jamil-judgement/)
+
+[10] SAYS. (2018, September 28). Unrealistic Beauty Standards & Underrepresentation In Media Has To Stop | Nandini Says [Video]. YouTube. [https://www.youtube.com/watch?v=4BlvUnysREo&ab_channel=SAYS](https://www.youtube.com/watch?v=4BlvUnysREo&ab_channel=SAYS )
+
 [11] Fardouly, J., & Vartanian, L. R. (2016). Social media and body image concerns: Current research and future directions. Current opinion in psychology, 9, 1-5.
-[12] Just Jared. (2019, March 21). The Good Place's Jameela Jamil Slams Khloe Kardashian in Her Instagram Comments. Just Jared. http://www.justjared.com/2019/03/21/the-good-places-jameela-jamil-slams-khloe-kardashian-in-her-instagram-comments/ 
+
+[12] Just Jared. (2019, March 21). The Good Place's Jameela Jamil Slams Khloe Kardashian in Her Instagram Comments. Just Jared. [http://www.justjared.com/2019/03/21/the-good-places-jameela-jamil-slams-khloe-kardashian-in-her-instagram-comments/ ](http://www.justjared.com/2019/03/21/the-good-places-jameela-jamil-slams-khloe-kardashian-in-her-instagram-comments/ )
 

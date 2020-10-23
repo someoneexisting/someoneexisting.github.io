@@ -25,9 +25,7 @@ As alluded to in my introduction, from the lens of co-production, the caloric co
 That public discourse stabilizes this naive concept of food nutrition, as opposed to scientists’ closer engagement with nature, is dangerous. It is a misunderstanding that total calorie intake is the be-all and end-all of nutrition. In fact, having the right mixture of nutrients and foods plays as large a part in the physical constitution of our body - our physical self! [2]
 
 ## Food pyramid
-The food pyramid further represents such a stabilised public understanding about balanced diet and nutrition. The first food pyramid was created in Sweden during the 1970s when food prices were high. It was meant to show people how to obtain adequate nutrition at affordable prices. Then, Anna Britt Agnsäter came up with the idea of a triangular diagram to better portray the recommended amounts for each food type. The idea was that there were basic foods which were cheap and nutritious and there were supplementary foods which provided nutrients missing from the basic foods. [3] At least for the public’s understanding of food science, it 
-
-<label for="mn-note" class="margin-toggle">
+The food pyramid further represents such a stabilised public understanding about balanced diet and nutrition. The first food pyramid was created in Sweden during the 1970s when food prices were high. It was meant to show people how to obtain adequate nutrition at affordable prices. Then, Anna Britt Agnsäter came up with the idea of a triangular diagram to better portray the recommended amounts for each food type. The idea was that there were basic foods which were cheap and nutritious and there were supplementary foods which provided nutrients missing from the basic foods. [3] At least for the public’s understanding of food science, it  <label for="mn-note" class="margin-toggle">
 is clear that the Food Pyramid was never a purely scientific instrument, taking into account local societal conditions in the economy and food supply. 
 </label>
 <input type="checkbox" id="mn-note" class="margin-toggle"/>
@@ -51,9 +49,15 @@ Phew! Thanks for reading that. There’s always more to learn on both sides of h
 
 # Reference
 [1] S. G. Eberle, Endurance sports nutrition, 3rd ed. Champaign, IL: Human Kinetics, 2014.
-[2] S. Camacho and A. Ruppel, “Is the calorie concept a real solution to the obesity epidemic?,” Global health action, 2017. [Online]. Available: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5496172/. [Accessed: 13-Oct-2020]. 
-[3] K. Smallwood, “Who Invented the Food Pyramid?,” Today I Found Out, 24-Aug-2014. [Online]. Available: http://www.todayifoundout.com/index.php/2013/09/invented-food-pyramid/. [Accessed: 13-Oct-2020]. 
-[4] Northwestern Medicine, “Dairy: Do You Really Need It?,” Northwestern Medicine. [Online]. Available: https://www.nm.org/healthbeat/healthy-tips/nutrition/dairy-do-you-really-need-it. [Accessed: 13-Oct-2020]. 
-[5] “Definition & Facts for Lactose Intolerance,” National Institute of Diabetes and Digestive and Kidney Diseases, 01-Feb-2018. [Online]. Available: https://www.niddk.nih.gov/health-information/digestive-diseases/lactose-intolerance/definition-facts. [Accessed: 13-Oct-2020]. 
+
+[2] S. Camacho and A. Ruppel, “Is the calorie concept a real solution to the obesity epidemic?,” Global health action, 2017. [Online]. Available: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5496172/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5496172/). [Accessed: 13-Oct-2020]. 
+
+[3] K. Smallwood, “Who Invented the Food Pyramid?,” Today I Found Out, 24-Aug-2014. [Online]. Available: [http://www.todayifoundout.com/index.php/2013/09/invented-food-pyramid/](http://www.todayifoundout.com/index.php/2013/09/invented-food-pyramid/) 
+[Accessed: 13-Oct-2020]. 
+
+[4] Northwestern Medicine, “Dairy: Do You Really Need It?,” Northwestern Medicine. [Online]. Available: [https://www.nm.org/healthbeat/healthy-tips/nutrition/dairy-do-you-really-need-it.](https://www.nm.org/healthbeat/healthy-tips/nutrition/dairy-do-you-really-need-it.)
+[Accessed: 13-Oct-2020]. 
+
+[5] “Definition & Facts for Lactose Intolerance,” National Institute of Diabetes and Digestive and Kidney Diseases, 01-Feb-2018. [Online]. Available: [https://www.niddk.nih.gov/health-information/digestive-diseases/lactose-intolerance/definition-facts.](https://www.niddk.nih.gov/health-information/digestive-diseases/lactose-intolerance/definition-facts.)[Accessed: 13-Oct-2020]. 
 
 
